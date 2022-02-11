@@ -4,7 +4,7 @@ package kype.nastya;
 public class speedCheckMas {
     public static boolean isGreenLight = false;
 
-    public static int speedCheckMas(int numbersOfPlayers) {
+    public static int speedCheckMas(int[] Players) {
 
         int[] speeds = new int[3];
 
@@ -12,10 +12,10 @@ public class speedCheckMas {
         speeds[0] = 5;
         speeds[1] = 0;
         speeds[2] = 2;
-        numbersOfPlayers = 0;
 
 
         int i = 0;
+        int numbersOfPlayers = 0;
 
         if (isGreenLight == true) {
 
@@ -23,13 +23,12 @@ public class speedCheckMas {
         } else {
             while (i <= 2) {
                 if (speeds[i] > 0) {
-
                     numbersOfPlayers = numbersOfPlayers + 1;
                     i++;
+
                 } else {
-                    numbersOfPlayers = numbersOfPlayers;
-                    i++;
-                }
+                    numbersOfPlayers = numbersOfPlayers ;
+                } i++;
 
             }
 
@@ -37,4 +36,5 @@ public class speedCheckMas {
         return numbersOfPlayers;
 
     }
+
 }

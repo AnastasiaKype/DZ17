@@ -1,11 +1,13 @@
-import static kype.nastya.speedCheckMas.speedCheckMas;
+import kype.nastya.speedCheckMas;
 
 public class Main {
 
 
+    private static int[] numbersOfPlayers;
+
     public static void main(String[] args) {
-        
-        int losePlayers = speedCheckMas(0);
+
+        int losePlayers = speedCheckMas.speedCheckMas(numbersOfPlayers);
         System.out.println("Выбывших " + losePlayers);
 
 
