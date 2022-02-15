@@ -7,35 +7,18 @@ public class speedCheckMas {
 
     public static int speedCheckMas(int[] players) {
 
-        int[] speeds = new int[3];
+        int speedWin = 0;
+        int sum = 0;
 
-
-        speeds[0] = 5;
-        speeds[1] = 0;
-        speeds[2] = 2;
-
-
-        int i = 0;
-        int numbersOfPlayers = 0;
-
-        if (isGreenLight == true) {
-
-            System.out.println("Выбывших:" + numbersOfPlayers);
-        } else {
-            while (i <= 2) {
-                if (speeds[i] > 0) {
-                    numbersOfPlayers = numbersOfPlayers + 1;
-                    i++;
-
-                } else {
-                    numbersOfPlayers = numbersOfPlayers ;
-                } i++;
-
+        for (int player : players) {
+            if (player != speedWin) {
+                sum++;
             }
 
-        }
-        return numbersOfPlayers;
 
+
+        } return sum;
     }
-
 }
+
+
