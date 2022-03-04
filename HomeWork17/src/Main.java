@@ -1,9 +1,9 @@
-import kype.nastya.speedCheckMas2;
-import kype.nastya.speedCheckMas3;
+import kype.nastya.SpeedCheck;
+
 
 import java.util.Arrays;
 
-import static kype.nastya.speedCheckMas.speedCheckMas;
+import static kype.nastya.SpeedCheck.speedCheckMas;
 
 
 public class Main {
@@ -16,13 +16,13 @@ public class Main {
 
 
         int[] players = {5,0,2};
-        int loserPlayers = speedCheckMas(players);
+        int loserPlayers = SpeedCheck.speedCheckMas(players);
         System.out.println(loserPlayers);
 
-        int[] loserPlayer2 = speedCheckMas2.speedCheckLosers(players);
+        int[] loserPlayer2 = SpeedCheck.speedCheckLosers(players);
         System.out.println(Arrays.toString(loserPlayer2));
 
-        int[] WinPlayer2 = speedCheckMas3.speedCheckWin(players);
+        int[] WinPlayer2 = SpeedCheck.speedCheckWin(players);
         System.out.println(Arrays.toString(WinPlayer2));
 
     }
