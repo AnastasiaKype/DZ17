@@ -9,7 +9,7 @@ public class SpeedCheck {
         int speedWin = 0;
         int sum = 0;
 
-        if (isGreenLight = true) {
+        if (isGreenLight == false) {
             for (int player : players) {
                 if (player != speedWin) {
                     sum++;
@@ -30,7 +30,7 @@ public class SpeedCheck {
         int speedWin = 0;
         int sum = 0;
 
-        if (isGreenLight = true) {
+        if (isGreenLight == false) {
             for (int player : players) {
                 if (player != speedWin) {
                     sum++;
@@ -61,7 +61,7 @@ public class SpeedCheck {
         int speedWin = 0;
         int sum = 0;
 
-        if (isGreenLight = true) {
+        if (isGreenLight == false) {
             for (int player : players) {
                 if (player <= speedWin) {
                     sum++;
