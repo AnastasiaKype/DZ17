@@ -19,10 +19,11 @@ public class speedCheckMasTest {
 
     @Test
     public void testingTwoMet() {
-        int[] speeds = {5,0,2};
+        int[] players = {5,0,2};
+        SpeedCheck.isGreenLight = false;
 
         int[] expected = {5,2};
-        int[] actual = SpeedCheck.speedCheckLosers(speeds);
+        int[] actual = SpeedCheck.speedCheckLosers(players);
 
         Assertions.assertArrayEquals(expected,actual);
 
@@ -30,10 +31,11 @@ public class speedCheckMasTest {
 
     @Test
     public void testingThreeMet() {
-        int[] speeds = {5,0,2};
+        int[] players = {5,0,2};
+        SpeedCheck.isGreenLight = false;
 
         int[] expected = {0};
-        int[] actual = SpeedCheck.speedCheckWin(speeds);
+        int[] actual = SpeedCheck.speedCheckWin(players);
 
         Assertions.assertArrayEquals(expected,actual);
 
